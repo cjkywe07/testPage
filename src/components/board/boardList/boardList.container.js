@@ -20,7 +20,7 @@ const BoardList = () => {
 
     useEffect(() => {
         axios
-            .get("http://koreanjson.com/posts")
+            .get("https://koreanjson.com/posts")
             .then((res) => {
                 setPosts(res.data);
                 setTotalPage(Math.ceil(res.data.length / countPerPage));
