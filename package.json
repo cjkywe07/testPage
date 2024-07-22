@@ -1,0 +1,24 @@
+{
+    "homepage": "https://cjkywe07.github.io/testPage",
+    "name": "test-site",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "build:ssg": "next build && next export",
+        "deploy": "rm -rf node_modules/.cache && next build && touch out/.nojekyll && git add -f out/ && git commit -m \"deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.13.2",
+        "axios": "^1.4.0",
+        "gh-pages": "^5.0.0",
+        "next": "13.4.4",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    }
+}
