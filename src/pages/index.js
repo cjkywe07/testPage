@@ -16,7 +16,7 @@ const Home = () => {
             <button onClick={onBoardListMoveClick}>게시글 목록 이동</button>
             {/* <div style={{ width: "400px", height: "300px", background: "url(/night.jpg) no-repeat center / contain" }}></div> */}
             <div
-                style={{ width: "400px", height: "300px", background: `url(${prefix}/night.jpg) no-repeat center / contain` }}
+                style={{ width: "400px", height: "300px", background: `url(${prefix}/sea.jpg) no-repeat center / contain` }}
             ></div>
         </>
     );
